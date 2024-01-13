@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Museo Sans Cyrl';
+    font-family: "Museo Sans Cyrl";
     src: url("../font/MuseoSansCyrl.otf") format("opentype");
-    }
+}
 
 body {
-    font-family: 'Museo Sans Cyrl';
+    font-family: "Museo Sans Cyrl";
     margin: 0;
     padding: 0;
-    color:rgba(255, 255, 255, 1);    
+    color: rgba(255, 255, 255, 1);
     background: rgb(255, 255, 255);
 }
 
@@ -55,6 +55,22 @@ summary::-moz-list-bullet {
 summary::marker {
     display: none;
 }
+summary:first-of-type {
+    display: block;
+}
+
+.title {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    font-family: "Museo Sans Cyrl";
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(26, 26, 26, 1);
+}
 
 .support__links {
     width: 100%;
@@ -64,35 +80,34 @@ summary::marker {
 
 .support__links-wrapper {
     margin: 0 auto;
-width: 100%;
-box-sizing: border-box;
-padding: 20px;
-background-color: rgba(147, 187, 234, 1);
-border-radius: 40px;
-
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(147, 187, 234, 1);
+    border-radius: 40px;
 }
 
 .support__links-text {
     display: flex;
     flex-direction: column;
-  align-items: center;
+    align-items: center;
 }
 
 .support__links-title {
     padding: 0;
     margin: 0 0 5px 0;
-    font-family: 'Museo Sans Cyrl';
+    font-family: "Museo Sans Cyrl";
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .support__links-description {
     padding: 0;
     margin: 0 0 20px 0;
-    font-family: 'Museo Sans Cyrl';
+    font-family: "Museo Sans Cyrl";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -124,7 +139,7 @@ border-radius: 40px;
     padding: 10px 15px 10px 25px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 12px;
-    font-family: 'Museo Sans Cyrl';
+    font-family: "Museo Sans Cyrl";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -133,7 +148,6 @@ border-radius: 40px;
     background-size: 14px 14px;
     background-repeat: no-repeat;
     background-position: 10px 50%;
-    
 }
 
 .links-buttons__item:nth-child(1) .links-buttons__link {
@@ -152,16 +166,10 @@ border-radius: 40px;
     background-image: url(../img/star.svg);
 }
 
-
-
-
-
-
-
 .support__community {
     width: 100%;
     box-sizing: border-box;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .support__community-wrapper {
@@ -169,70 +177,64 @@ border-radius: 40px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-width: 100%;
-box-sizing: border-box;
-padding: 20px;
-background-color: rgba(255, 255, 255, 1);
-border-radius: 40px;
-box-shadow: 0px 20px 60px 0px rgba(26, 26, 26, 0.05);
-
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    box-shadow: 0px 20px 60px 0px rgba(26, 26, 26, 0.05);
 }
 
 .support__community-text {
-margin: 0 10px 0 0;
+    margin: 0 10px 0 0;
 }
 
 .support__community-title {
-padding: 0;
-margin: 0 0 10px 0;
-font-family: "Museo Sans Cyrl";
-font-size: 12px;
-font-weight: 600;
-letter-spacing: 0px;
-text-align: left;
-color: rgba(26, 26, 26, 1);
-
-
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-family: "Museo Sans Cyrl";
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(26, 26, 26, 1);
 }
 
 .support__community-description {
     padding: 0;
-margin: 0;
+    margin: 0;
     font-family: "Museo Sans Cyrl";
-font-size: 25px;
-font-weight: 600;
-letter-spacing: 0px;
-text-align: left;
-color: rgba(26, 26, 26, 1);
-
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(26, 26, 26, 1);
 }
-
 
 .support__community-buttons {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    
+
     flex-wrap: wrap;
 }
 
 .community-buttons__item {
     height: 56px;
-width: 56px;
+    width: 56px;
     padding: 0;
     margin: 0 5px 5px 0;
     display: flex;
 }
 
-
 .community-buttons__link {
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-background: rgba(249, 249, 249, 1);
-border-radius: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(249, 249, 249, 1);
+    border-radius: 14px;
 }
 
 .community-buttons__link img {
@@ -240,31 +242,131 @@ border-radius: 14px;
     height: 20px;
 }
 
-@media (min-width:760px) {
+.support__faq {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.support__enquiry {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.support__enquiry-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry__list {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry__item {
+    padding: 15px 20px;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.enquiry__item-ask {
+    position: relative;
+    font-family: "Museo Sans Cyrl";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(26, 26, 26, 1);
+}
+
+.enquiry__item-ask--big {
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-family: "Museo Sans Cyrl";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(26, 26, 26, 1);
+}
+
+.enquiry__item-ask--small {
+    padding: 0;
+    margin: 0;
+    font-family: "Museo Sans Cyrl";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(148, 148, 148, 1);
+}
+
+.enquiry__item-answer {
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-family: "Museo Sans Cyrl";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(148, 148, 148, 1);
+}
+
+.enquiry__item-ask:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    background-image: url(../img/next-gray.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 7px 11px;
+}
+
+.enquiry__item[open] > summary:before {
+    transform: rotate(90deg);
+}
+
+@media (min-width: 760px) {
     .support__links {
         padding: 25px;
     }
-    
+
     .support__links-wrapper {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .support__links-text {
         max-width: 535px;
-            }
-    
+    }
+
     .support__links-title {
         font-size: 40px;
     }
-    
+
     .support__links-description {
         margin: 0 0 25px 0;
         font-size: 16px;
     }
-    
+
     .support__links-buttons {
         list-style: none;
         padding: 0;
@@ -276,93 +378,93 @@ border-radius: 14px;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
+
     .links-buttons__item {
         min-width: 160px;
         margin: 0 20px 20px 0;
     }
-   
+
     .links-buttons__link {
         padding: 15px 25px 15px 47px;
         font-size: 15px;
         background-position: 25px 50%;
-        
     }
-    
-
-
 
     .support__community {
-    
-        padding: 25px; 
+        padding: 25px;
     }
 
     .support__community-wrapper {
-        padding: 30px; 
+        padding: 30px;
     }
-    
+
     .support__community-text {
-    margin: 0 10px 0 0;
+        margin: 0 10px 0 0;
     }
-    
+
     .support__community-title {
-    padding: 0;
-    margin: 0 0 16px 0;
+        padding: 0;
+        margin: 0 0 16px 0;
 
-font-size: 15px;
+        font-size: 15px;
 
-line-height: 18px;
-letter-spacing: 0px;
-
-
-    
-    
+        line-height: 18px;
+        letter-spacing: 0px;
     }
-    
+
     .support__community-description {
-font-size: 30px;
-
-    
+        font-size: 30px;
     }
-    
-    
+
     .support__community-buttons {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
-        
+
         flex-wrap: wrap;
     }
-    
+
     .community-buttons__item {
         height: 56px;
-    width: 56px;
+        width: 56px;
         padding: 0;
         margin: 0 5px 5px 0;
         display: flex;
     }
 
-    
+    .support__faq {
+        padding: 25px;
+    }
 
+    .support__enquiry {
+        padding: 25px;
+    }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
+    .title {
+        padding: 0;
+        margin: 0 auto 35px auto;
+
+        font-size: 40px;
+
+        line-height: 48px;
+    }
+
     .support__links {
         padding: 40px;
     }
-    
+
     .support__links-wrapper {
         position: relative;
-    padding: 40px 0 54px 0;
-    max-width: 1200px;
-    
-       
+        padding: 40px 0 54px 0;
+        max-width: 1200px;
+
         background-image: url(../img/img.png);
         background-repeat: no-repeat;
         background-size: auto;
         background-position: top 80px right 0;
-    
     }
     .support__links-wrapper::after {
         content: "";
@@ -375,27 +477,24 @@ font-size: 30px;
         background-repeat: no-repeat;
         background-size: 274px 195px;
         background-position: center;
-
     }
- 
 
     .support__links-title {
         font-size: 60px;
         line-height: 72px;
     }
-    
+
     .support__links-description {
         margin: 0 0 40px 0;
         font-size: 17px;
         line-height: 24px;
     }
-    
+
     .support__links-buttons {
-       
         justify-content: center;
         flex-wrap: no-wrap;
     }
-    
+
     .links-buttons__item {
         min-width: 160px;
         min-width: 48px;
@@ -405,50 +504,101 @@ font-size: 30px;
     .links-buttons__item:last-child {
         margin: 0;
     }
-   
-    
-
-
 
     .support__community {
-    
-        padding: 40px; 
+        padding: 40px;
     }
 
     .support__community-wrapper {
-        padding: 40px 42px; 
+        padding: 40px 42px;
         max-width: 996px;
         box-sizing: border-box;
     }
-    
-    
-    
+
     .support__community-description {
+        font-size: 40px;
 
-font-size: 40px;
-
-line-height: 48px;
-letter-spacing: 0px;
-
-
-    
+        line-height: 48px;
+        letter-spacing: 0px;
     }
-    
-    
+
     .support__community-buttons {
-       
         flex-wrap: nowrap;
     }
-    
+
     .community-buttons__item {
-   
         padding: 0;
         margin: 0 15px 0 0;
-
     }
 
     .community-buttons__item:last-child {
         margin: 0;
     }
 
+    .support__faq {
+        padding: 40px;
+    }
+
+    .support__enquiry {
+        padding: 40px;
+    }
+    .support__enquiry-wrapper {
+        max-width: 996px;
+    }
+
+    .enquiry__item {
+        padding: 20px 25px;
+        margin: 0 0 12px 0;
+    }
+
+    .enquiry__item-ask {
+        position: relative;
+        font-family: "Museo Sans Cyrl";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+
+        color: rgba(26, 26, 26, 1);
+    }
+
+    .enquiry__item-ask--big {
+        padding: 0;
+        margin: 0 0 5px 0;
+        font-family: "Museo Sans Cyrl";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: rgba(26, 26, 26, 1);
+    }
+
+    .enquiry__item-ask--small {
+        padding: 0;
+        margin: 0;
+        font-family: "Museo Sans Cyrl";
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+
+        color: rgba(148, 148, 148, 1);
+    }
+
+    .enquiry__item-answer {
+        padding: 0;
+        margin: 10px 0 0 0;
+        font-family: "Museo Sans Cyrl";
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: rgba(148, 148, 148, 1);
+    }
 }
