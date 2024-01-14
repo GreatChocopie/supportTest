@@ -245,7 +245,85 @@ summary:first-of-type {
 .support__faq {
     width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+}
+
+.support__faq-title {
+    padding: 0 20px;
+}
+
+.mySwiper .swiper-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 30px 20px;
+    box-sizing: border-box;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+
+    box-sizing: border-box;
+    display: flex;
+}
+
+.swiper-slide .swiper-slide__item {
+    width: 100%;
+    height: 160px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.swiper-slide__item .swiper-slide__item-link {
+    padding: 16px 16px 19px 16px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.swiper-slide__item-headline {
+    padding: 0;
+    margin: 0 0 8px 0;
+
+    font-family: "Museo Sans Cyrl";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(26, 26, 26, 1);
+}
+.swiper-slide__item-description {
+    margin: 0;
+    padding: 0;
+    font-family: "Museo Sans Cyrl";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(148, 148, 148, 1);
+}
+.swiper-slide__item--img .swiper-slide__item-description {
+    width: 150px;
+}
+
+.swiper-slide__item--img .swiper-slide__item-headline {
+    width: 150px;
+}
+.swiper-slide__item--img {
+    background-image: url(../img/img2.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 104px 160px;
 }
 
 .support__enquiry {
@@ -432,9 +510,15 @@ summary:first-of-type {
         margin: 0 5px 5px 0;
         display: flex;
     }
+    .support__faq-title {
+        padding: 0 25px;
+    }
 
-    .support__faq {
-        padding: 25px;
+    .mySwiper .swiper-wrapper .swiper-slide {
+        width: calc(50% - 10px) !important;
+
+        box-sizing: border-box;
+        display: flex;
     }
 
     .support__enquiry {
@@ -507,6 +591,7 @@ summary:first-of-type {
 
     .support__community {
         padding: 40px;
+        margin-bottom: 40px;
     }
 
     .support__community-wrapper {
@@ -534,9 +619,25 @@ summary:first-of-type {
     .community-buttons__item:last-child {
         margin: 0;
     }
+    .support__faq-title {
+        padding: 0;
+        margin-bottom: 2px;
+    }
+    .support__faq .mySwiper {
+        max-width: 1260px;
+        margin: 0 auto;
+    }
 
-    .support__faq {
-        padding: 40px;
+    .mySwiper .swiper-wrapper {
+        padding: 30px 30px 40px 30px;
+    }
+
+    .mySwiper .swiper-wrapper .swiper-slide {
+        width: 282px !important;
+    }
+
+    .swiper-slide .swiper-slide__item {
+        width: 282px;
     }
 
     .support__enquiry {
