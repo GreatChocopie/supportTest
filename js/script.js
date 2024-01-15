@@ -9,10 +9,7 @@ function handleTabletChange0(e) {
       slidesPerView: 1,
       spaceBetween: 20,
       centeredSlides: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -29,10 +26,7 @@ function handleTabletChange(e) {
       spaceBetween: 20,
       centeredSlides: true,
 
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -76,6 +70,7 @@ function handleTabletChange2(e) {
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
+        
       },
     });
   }
@@ -89,15 +84,13 @@ function handleTabletChange3(e) {
       slidesPerView: 4,
       slidesPerGroup: 4,
       freeMode: true,
-
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      spaceBetween: 0,
+      
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-        momentumVelocityRatio: 2,
+        stopOnLastSlide: true,
+        pauseOnMouseEnter: true,
       },
     });
   }
