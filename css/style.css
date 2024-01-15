@@ -750,7 +750,6 @@ summary:first-of-type {
   }
   .mySwiper .swiper-wrapper .swiper-slide {
     width: 282px !important;
-    margin-right: 0 !important;
   }
   .swiper-slide .swiper-slide__item {
     width: 282px;
@@ -763,18 +762,6 @@ summary:first-of-type {
     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
     background-color: rgb(255, 255, 255);
     background-image: url(../img/next.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-  }
-  .support__faq .mySwiper .swiper-button-prev {
-    display: block;
-    left: 30px;
-    width: 44px;
-    height: 44px;
-    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
-    background-color: rgb(255, 255, 255);
-    background-image: url(../img/chevron_left.svg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
