@@ -8,10 +8,14 @@ function handleTabletChange0(e) {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
-      freeMode: true,
+      centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
   }
@@ -22,12 +26,16 @@ function handleTabletChange(e) {
   if (e.matches) {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
-
-      freeMode: true,
+      spaceBetween: 20,
+      centeredSlides: true,
 
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
   }
@@ -38,12 +46,15 @@ function handleTabletChange1(e) {
   if (e.matches) {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
-      spaceBetween: 20,
       freeMode: true,
 
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
   }
@@ -62,6 +73,10 @@ function handleTabletChange2(e) {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     });
   }
 }
@@ -72,12 +87,17 @@ function handleTabletChange3(e) {
   if (e.matches) {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
-
+      slidesPerGroup: 4,
       freeMode: true,
 
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        momentumVelocityRatio: 2,
       },
     });
   }
